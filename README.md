@@ -31,7 +31,7 @@
 
 В классе **Clock** должен храниться словарь данных для часовых поясов:
 
-```
+```csharp
 Dictionary<string,TimeSpan> zones;
 zones["World"]=new TimeSpan(-2,0,0);
 zones["Moscow"]=new TimeSpan(0,0,0);
@@ -47,7 +47,7 @@ zones["Vlad"]=new TimeSpan(7,0,0);
 
 Делегат нужно сначала описать, а потом создать переменную:
 
-```
+```csharp
 public delegate void Update(TextBox tb, DateTime dt);
 public Update upd;
 ```
@@ -57,7 +57,7 @@ public Update upd;
 
 ## Пример программы с использованием одного экземпляра часов (без словаря)
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -85,7 +85,6 @@ namespace WindowsFormsApplication1
             {
                 tbWorld.Text = dt.ToString();
             }));
-            
         }
 
         private void btnStart_Click(object sender, EventArgs e)
