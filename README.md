@@ -33,8 +33,8 @@
 
 ```
 Dictionary<string,TimeSpan> zones;
-zones["World"]=new TimeSpan(0,0,0);
-zones["Moscow"]=new TimeSpan(2,0,0);
+zones["World"]=new TimeSpan(-2,0,0);
+zones["Moscow"]=new TimeSpan(0,0,0);
 zones["Vlad"]=new TimeSpan(7,0,0);
 ```
 
